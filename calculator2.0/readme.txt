@@ -1,1 +1,0 @@
-This is a editing version of calculator.
