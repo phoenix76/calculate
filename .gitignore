@@ -4,7 +4,6 @@
 # User-specific files
 *.exe
 *.lib
-*.suo
 *.user
 *.sln.docstates
 
