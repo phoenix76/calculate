@@ -3,6 +3,7 @@
 
 # User-specific files
 *.exe
+*.suo
 *.lib
 *.user
 *.sln.docstates
