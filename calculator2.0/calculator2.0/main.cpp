@@ -1,10 +1,17 @@
 #include <Windows.h>
 #include "calc_processor.h"
 
-#ifdef _DEBUG
-#pragma comment(lib, "calc_processor_d.lib")
-#else
-#pragma comment(lib, "calc_processor.lib")
+#define RELEASE_X64
+#define VERSION 2.0
+
+#if (defined DEBUG_X86)
+#pragma comment(lib, "calc_processor_86_d.lib")
+#elif (defined DEBUG_X64)
+#pragma comment(lib, "calc_processor_64_d.lib")
+#elif (defined RELEASE_X86)
+#pragma comment(lib, "calc_processor_86.lib")
+#elif (defined RELEASE_X64)
+#pragma comment(lib, "calc_processor_64.lib")
 #endif
 
 #define TEXTFIELD 2998
