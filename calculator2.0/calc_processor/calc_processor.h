@@ -5,7 +5,7 @@
 #include <string>
 #include <cmath>
 
-class cIOHandler
+class __declspec(dllexport) cIOHandler
 {
 public:
 	void Init();
